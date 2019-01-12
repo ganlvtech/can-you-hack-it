@@ -85,7 +85,7 @@ function xorDecrypt(dataBytes, key) {
     let ch = String.fromCharCode(b ^ key.charCodeAt(i));
     result += ch;
     i++;
-    if (i >= keyLength) {
+    if (i >= key.length) {
       i = 0;
     }
   });
@@ -137,7 +137,7 @@ function testIsEnglish(sentence) {
       matchedLength += word.length;
     }
   });
-  return (matchedWords + matchedLength / sentence.length) / (words.length + 1);
+  return (matchedWords + matchedLength / sentence.replace(/\W/g, '').length) / (words.length + 1);
 }
 
 function tryXOR(dataBytes, keyBytes, keyCount) {

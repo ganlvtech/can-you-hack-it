@@ -73,7 +73,7 @@ function testIsEnglish(sentence) {
       matchedLength += word.length;
     }
   });
-  return (matchedWords + matchedLength / sentence.length) / (words.length + 1);
+  return (matchedWords + matchedLength / sentence.replace(/\W/g, '').length) / (words.length + 1);
 }
 
 function tryRot(encrypted) {
