@@ -6,6 +6,7 @@
  * Submit the correct PIN to proceed (3 - 4 digits long).
  *
  * Console message:
+ *
  * To submit a pin here, use the BrutalForce_submit(pin) function
  */
 

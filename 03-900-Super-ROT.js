@@ -11,6 +11,12 @@
  * gtuznkx oy got'z noy
  *
  * Submit the decrypted message.
+ *
+ * Console message:
+ *
+ * To submit here, use the SuperRot_submit(answer) function.
+ * It will return a promise that will resolve with a bool for whether or not the answer was correct.
+ * Use the function SuperRot_getEncryptedMessage() to retrieve the current message to solve.
  */
 
 /**

@@ -1,4 +1,6 @@
 /**
+ * Code Breaker
+ *
  * Break the alpha-numeric code like in spy movies.
  * Each guess returns a score.
  * The higher the score the more characters you have correct and in the correct position.
@@ -6,6 +8,7 @@
  * Submit your guesses (code is 7 alpha-numeric characters long).
  *
  * Console message:
+ *
  * To submit here, use the CodeBreaker_submit(code) function.
  * It will return a promise that will resolve with the score of the submission.
  */
